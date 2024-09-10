@@ -1,10 +1,15 @@
 import React from 'react'
+import Sidebar from './components/Sidebar'
+import Headerbar from './components/Headerbar'
 
 const App = () => {
   return (
-    <div>
-      
+    <div className='h-screen bg-black'>
+      <Headerbar/>
+      <div className = 'h-[90%] flex'>
+      </div>
     </div>
+    
   )
 }
 

@@ -1,4 +1,5 @@
 import bell_icon from './bell.png'
+import browse_icon from './browse.png'
 import home_icon from './home.png'
 import like_icon from './like.png'
 import loop_icon from './loop.png'
@@ -44,6 +45,7 @@ import song3 from  './song3.mp3'
 
 export const assets = {
     bell_icon,
+    browse_icon,
     home_icon,
     like_icon,
     loop_icon,
