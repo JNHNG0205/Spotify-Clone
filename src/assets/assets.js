@@ -1,6 +1,10 @@
 import bell_icon from './bell.png'
+import bell_icon_white from './bell_white.png'
 import browse_icon from './browse.png'
+import browse_icon_white from './browse_white.png'
+import download_icon from './download.png'
 import home_icon from './home.png'
+import home_icon_white from './home_white.png'
 import like_icon from './like.png'
 import loop_icon from './loop.png'
 import mic_icon from './mic.png'
@@ -45,8 +49,12 @@ import song3 from  './song3.mp3'
 
 export const assets = {
     bell_icon,
+    bell_icon_white,
     browse_icon,
+    browse_icon_white,
+    download_icon,
     home_icon,
+    home_icon_white,
     like_icon,
     loop_icon,
     mic_icon,
