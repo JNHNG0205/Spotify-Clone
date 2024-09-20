@@ -7,6 +7,7 @@ const App = () => {
     <div className='h-screen bg-black'>
       <Headerbar/>
       <div className = 'h-[90%] flex'>
+        <Sidebar/>
       </div>
     </div>
     

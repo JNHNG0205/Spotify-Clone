@@ -23,7 +23,7 @@ const Headerbar = () => {
   }
 
   return (
-    <div className='w-full p-2 flex items-center justify-between'>
+    <div className='w-full pt-2 px-2 flex items-center justify-between'>
       <button className='w-8 h-8 ml-2 sm:ml-5'>
         <img src={assets.spotify_logo} alt="" />
       </button>
@@ -62,7 +62,7 @@ const Headerbar = () => {
       </div>
 
       <div className='flex items-center space-x-2 sm:space-x-6'>
-        <button className='bg-white px-3 py-1 rounded-full font-bold text-sm text-center h-8 hover:scale-110 hover:bg-gray-200'>
+        <button className='bg-white px-3 pt-1 pb-1.5 rounded-full font-bold text-sm text-center h-8 hover:scale-110 hover:bg-gray-200'>
           Explore Premium
         </button>
         <button className='text-white text-sm font-bold flex items-center justify-center hover:scale-110'>
