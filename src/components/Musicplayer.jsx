@@ -5,7 +5,7 @@ import { songsData } from '../assets/assets'
 
 const Musicplayer = () => {
   return (
-    <div className='h-[12%] bg-blue-400 flex justify-between items-center px-4 text-white'>
+    <div className='h-[12%] bg-black flex justify-between items-center px-4 text-white'>
       <div className='hidden lg:flex items-center gap-4'>
         <img src={songsData[0].image} alt="" className='w-14 rounded-md' />
         <div>
