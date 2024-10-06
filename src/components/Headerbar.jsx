@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { assets } from '../assets/assets'
+import { useNavigate } from 'react-router-dom'
 
 const Headerbar = () => {
   const [isHomeActive, setIsHomeActive] = useState(false)
@@ -9,6 +10,8 @@ const Headerbar = () => {
   const [isNewsHovered, setIsNewsHovered] = useState(false)
   const [isSearchFocused, setIsSearchFocused] = useState(false)
   const [isSearchHovered, setIsSearchHovered] = useState(false)
+
+  const navigate = useNavigate();
 
   const toggleHomeActive = () => {
     setIsHomeActive(!isHomeActive)
@@ -25,14 +28,12 @@ const Headerbar = () => {
   return (
     <div className='w-full pt-2 px-2 flex items-center justify-between'>
       <button className='w-8 h-8 ml-2 sm:ml-5'>
-        <img src={assets.spotify_logo} alt="" />
+        <img src={assets.spotify_logo} alt="" onClick={() => navigate('/')}/>
       </button>
 
       <div className=' ml-[20%] hidden md:flex items-center space-x-4 lg:space-x-2'>
         <button 
-          className='w-12 h-12 bg-[#1F1F1F] rounded-full overflow-hidden relative hover:scale-110'
-          onClick={toggleHomeActive}
-        >
+          className='w-12 h-12 bg-[#1F1F1F] rounded-full overflow-hidden relative hover:scale-110' onClick={() => navigate('/')}>
           <div className='absolute inset-0 flex items-center justify-center'>
             <img 
               src={isHomeActive ? assets.home_icon_white : assets.home_icon} 
